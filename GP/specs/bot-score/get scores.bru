@@ -1,0 +1,21 @@
+meta {
+  name: get scores
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/botScore/1
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMDcwNzI4MCwiZXhwIjoxNzUyMjQzMjgwfQ.EyuoXFfvsSd5gAgaqxcE2ECyA5uBZk7Dl-b_U5WgjQ0
+}
+
+body:json {
+  {
+    "userId": 1
+  }
+}

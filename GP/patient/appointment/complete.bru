@@ -1,0 +1,21 @@
+meta {
+  name: complete
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/appointment/complete
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMzk4NDU1MywiZXhwIjoxNzU1NTIwNTUzfQ.eA6zaj6xn_UT7-5G3mArmW6nGxepo-yesSvHoFX11r4
+}
+
+body:json {
+  {
+    "appointmentId": 2
+  }
+}

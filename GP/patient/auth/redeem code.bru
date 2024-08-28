@@ -1,0 +1,26 @@
+meta {
+  name: redeem code
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{host}}/user/redeemCode
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjExNTY2NiwiZXhwIjoxNzUzNjUxNjY2fQ.0zE5mY-jq8ZQpW6epuMXdfZyo0Wv1gfDDw7fH9LfDYM
+}
+
+body:json {
+  {
+    "code": "zyHZ6rrY"
+  }
+}
+
+body:form-urlencoded {
+  oldPassword: 12345678
+  newPassword: 00000000
+}

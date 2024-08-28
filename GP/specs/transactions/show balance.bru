@@ -1,0 +1,22 @@
+meta {
+  name: show balance
+  type: http
+  seq: 4
+}
+
+get {
+  url: 127.0.0.1:3000/specs/wallet/balance
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzkxNTExMSwiZXhwIjoxNzU1NDUxMTExfQ.TeEnBSpIJM4gjGbeIijs6P7GC8YgwKFAKcXjJ2V1-JI
+}
+
+body:json {
+  {
+  "amount":17
+    
+  }
+}

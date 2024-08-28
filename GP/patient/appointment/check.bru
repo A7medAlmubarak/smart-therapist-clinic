@@ -1,0 +1,21 @@
+meta {
+  name: check
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/appointment/check/2
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMzk4NDU1MywiZXhwIjoxNzU1NTIwNTUzfQ.eA6zaj6xn_UT7-5G3mArmW6nGxepo-yesSvHoFX11r4
+}
+
+body:json {
+  {
+    "appointmentId": 1
+  }
+}

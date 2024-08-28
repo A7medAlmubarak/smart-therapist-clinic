@@ -1,0 +1,21 @@
+meta {
+  name: approval for employment requests
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{URL}}/specs/employmentRequests/1/approval
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzU3OTkyOSwiZXhwIjoxNzU1MTE1OTI5fQ.6kGEzJh3jjuf2bgAYNOJ8JWULTFVGHuXKLXn5cD70E8
+}
+
+body:json {
+  {
+    "status":true
+  }
+}

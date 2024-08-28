@@ -1,0 +1,34 @@
+meta {
+  name: show request
+  type: http
+  seq: 3
+}
+
+get {
+  url: 127.0.0.1:3000/specs/getClinicRegistrationRequests/5
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsImlhdCI6MTcxOTQwMDMzMiwiZXhwIjoxNzUwOTM2MzMyfQ.jy_3M5s7YrYy3HnMcCBnT5O8hlsbJmuJ0pWrwQzjGs4
+}
+
+body:json {
+  {
+  "email":"falee.saglnasyef@gmail.com",
+    "password":"ADFSgdf42523"
+  
+  }
+}
+
+body:multipart-form {
+  email: fale7.alnayef@gmail.com
+  password: ADFSgdf42523
+  roleId: 2
+  phone: 0991086315
+  dateOfBirth: 2001-01-01
+  photo: @file(C:\Users\faleh\Pictures\Screenshots\Screenshot (15).png)
+  gender: 1
+  fullName: faleh
+}

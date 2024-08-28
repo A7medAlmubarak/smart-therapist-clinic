@@ -1,0 +1,21 @@
+meta {
+  name: unblock
+  type: http
+  seq: 2
+}
+
+post {
+  url: 127.0.0.1:3000/blocks/undo
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzU3MjYzNywiZXhwIjoxNzU1MTA4NjM3fQ.VxVPuAAZmcD4fpFO0ks-inFzQM2mMxTWUrt1uXt1Lx4
+}
+
+body:json {
+  {                      
+    "userId":1
+  }
+}

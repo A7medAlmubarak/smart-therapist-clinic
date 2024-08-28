@@ -1,0 +1,22 @@
+meta {
+  name: assign
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/specs/assignment
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMjExNTc1MSwiZXhwIjoxNzUzNjUxNzUxfQ.XEM5Ze18ft75JpUWdGgsN4jhlEDibTc0QVrecdwuxMI
+}
+
+body:json {
+  {
+    "userId": 1,
+    "specId": 3
+  }
+}

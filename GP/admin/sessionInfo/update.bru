@@ -1,0 +1,23 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+put {
+  url: 127.0.0.1:3000/sessionInfo/1/update
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxODk5MzYzNSwiZXhwIjoxNzUwNTI5NjM1fQ.xr2Zo2mzKUhYAmQ_Xx57IbpzuzgiyHiY4A8YfYPPuUo
+}
+
+body:json {
+  {
+    "time": "30m",
+    "price": 150000
+  }
+}
+

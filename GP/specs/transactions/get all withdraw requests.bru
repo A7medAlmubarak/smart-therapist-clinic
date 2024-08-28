@@ -1,0 +1,22 @@
+meta {
+  name: get all withdraw requests
+  type: http
+  seq: 2
+}
+
+get {
+  url: 127.0.0.1:3000/specs/clinic/withdraw
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMzczMDk5MCwiZXhwIjoxNzU1MjY2OTkwfQ.KlVOddUvvzKGoJ1sDbjls20iqJo8loZTLV3aTZs6tI0
+}
+
+body:json {
+  {
+  "amount":17
+    
+  }
+}

@@ -1,0 +1,27 @@
+meta {
+  name: create request
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/appointment/request/specialist/createRequest
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMjcwNjUzNywiZXhwIjoxNzU0MjQyNTM3fQ.UlbOJgqgGWjj01h6tqp9mKmZje5i7D3H2P6Io9lxYGA
+}
+
+body:json {
+  {
+    "date": "32232"
+  }
+}
+
+body:form-urlencoded {
+  date: 2024-08-27 04:58:39
+  userId: 1
+  description: blah blah
+}

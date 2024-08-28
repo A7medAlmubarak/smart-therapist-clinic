@@ -1,0 +1,30 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{URL}}/specs/medicalRecords/update/5
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJpYXQiOjE3MjM5ODYwMDIsImV4cCI6MTc1NTUyMjAwMn0.7HYA-IPIMfZB0dHaEsYpLtEWglBw6msSRJlu5T8llmw
+}
+
+body:json {
+  {
+  "mainComplaint": "777",
+    "symptoms": "777",
+    "causes": "777",
+    "startDate": "2024-01-1",
+    "fType": "77",
+    "fDescription": "they die after 77",
+    "pType": "tried to777die",
+    "pDescription": "was looking for a77way to ill him self",
+      "differentialDiagnosis": "7",
+    "treatmentPlan": "must 77 himself"
+  }
+}

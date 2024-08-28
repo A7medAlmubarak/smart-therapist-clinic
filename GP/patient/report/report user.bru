@@ -1,0 +1,22 @@
+meta {
+  name: report user
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/reports/user
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjc4ODEyMSwiZXhwIjoxNzU0MzI0MTIxfQ.FeL7LVMYH2-BsZa3JRt7XBG5WFNV6xfbReK9RnXqVw8
+}
+
+body:json {
+  {
+    "userId": 2,
+    "description": "afafd"
+  }
+}

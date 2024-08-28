@@ -1,0 +1,33 @@
+meta {
+  name: registration request
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/specs/clinicRegistrationRequest
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzk4NTI5NiwiZXhwIjoxNzU1NTIxMjk2fQ.FP_XwBaT_IQ_FapdrVHY0etLIJzN-n0CLafQV0dYdrI
+}
+
+body:json {
+  {
+  "email":"falee.saglnasyef@gmail.com",
+    "password":"ADFSgdf42523"
+  
+  }
+}
+
+body:multipart-form {
+  doc: @file(/home/faleh/icons/Dakirby309-Simply-Styled-OS-Linux.256.png)
+  categories: 2
+  latitude: 1.3401801
+  longitude: 13.434114
+  clinicName: death clinic
+  cityId: 1
+  address: masakeen barzah, falafel ala kefak
+}

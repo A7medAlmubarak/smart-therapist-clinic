@@ -1,0 +1,11 @@
+meta {
+  name: get doctors
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{URL}}/specs/getAllSpecialists
+  body: formUrlEncoded
+  auth: none
+}

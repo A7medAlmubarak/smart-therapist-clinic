@@ -1,0 +1,17 @@
+meta {
+  name: check email
+  type: http
+  seq: 10
+}
+
+get {
+  url: 127.0.0.1:3000/specs/checkEmail
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  "email":"fal7e.alnayef@gmail.com"
+  }
+}

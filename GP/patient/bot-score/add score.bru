@@ -1,0 +1,22 @@
+meta {
+  name: add score
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/botScore
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcyMDk2NDYzOCwiZXhwIjoxNzUyNTAwNjM4fQ.VmVbjl1khqNrKj9D1rJ0Ef32CPjdOGl4LmtQ9aM2k9o
+}
+
+body:json {
+  {
+  
+    "score": "dfamkljfajkak"
+  }
+}

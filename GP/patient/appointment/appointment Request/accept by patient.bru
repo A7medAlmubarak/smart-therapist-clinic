@@ -1,0 +1,19 @@
+meta {
+  name: accept by patient
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:3000/appointment/request/3/patient/accept
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNDQxOTQ5MSwiZXhwIjoxNzU1OTU1NDkxfQ.W7Y7TSOZRGk0doEaYamympioXSfZPulT3VJ2uu9wkhM
+}
+
+body:form-urlencoded {
+  date: 2022-1-4
+}

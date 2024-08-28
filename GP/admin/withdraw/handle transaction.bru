@@ -1,0 +1,21 @@
+meta {
+  name: handle transaction
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/withdraws/requests/4/handleRequest
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMzczMDgwNiwiZXhwIjoxNzU1MjY2ODA2fQ.JJHk4sqP_Uyk07qGdbErv1tWgNRdvaRxp99HJgIbHgI
+}
+
+body:multipart-form {
+  file: @file(/home/faleh/icons/Dakirby309-Simply-Styled-OS-Linux.256.png)
+  description: ksd;lfs
+  status: true
+}

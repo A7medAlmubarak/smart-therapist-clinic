@@ -1,0 +1,15 @@
+meta {
+  name: show patient profile
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/specs/patients/3/profile
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMDk2NDM1MywiZXhwIjoxNzUyNTAwMzUzfQ.fcBl9k_5iVcnt9_J5grZjOJjgc0zo6w7TXxptrhJilY
+}

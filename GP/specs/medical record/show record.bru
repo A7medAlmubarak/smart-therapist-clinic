@@ -1,0 +1,32 @@
+meta {
+  name: show record
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{URL}}/specs/medicalRecords/getRecord/5
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJpYXQiOjE3MjM5ODYwMDIsImV4cCI6MTc1NTUyMjAwMn0.7HYA-IPIMfZB0dHaEsYpLtEWglBw6msSRJlu5T8llmw
+}
+
+body:json {
+  {
+    "patientId": 1,
+      "mainComplaint": 1,
+    "symptoms": 1,
+    "causes": 1,
+    "startDate": 1,
+    "fType": 1,
+    "fDescription": 1,
+    "pType": 1,
+    "pDescription": 1,
+      "differentialDiagnosis": 1,
+    "treatmentPlan": 1
+  
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: generate codes
+  type: http
+  seq: 1
+}
+
+post {
+  url: 127.0.0.1:3000/codes
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjExNTgxMCwiZXhwIjoxNzUzNjUxODEwfQ.yXoTLnMlYBdAyy9UiPnEhipfns3_HdHIB0G-K1yvdSY
+}
+
+body:json {
+  {
+    "amount": 10000,
+    "numberOfCodes":4
+  }
+}

@@ -1,0 +1,28 @@
+meta {
+  name: report appointment
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL}}/reports/appointment
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJpYXQiOjE3MjM5MzA3OTAsImV4cCI6MTc1NTQ2Njc5MH0.y8zLni_V0lOmBRfM53qeBsTYl_PJjzaS1bDARluLY-I
+}
+
+body:json {
+  {
+    "appointmentId": 1,
+    "description": "afafd"
+  }
+}
+
+body:multipart-form {
+  description: dmkkmfaskl;d
+  appointmentId: 1
+  pic: @file(/home/faleh/Downloads/photo_2024-08-18_00-46-55.jpg)
+}

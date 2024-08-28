@@ -1,0 +1,32 @@
+meta {
+  name: get records
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/specs/medicalRecords/1
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyNDQwNDI4OCwiZXhwIjoxNzU1OTQwMjg4fQ.kuNp0Sso2UtqmmIx_KK25qKuGo60VLoiQ-jliVzl1Lk
+}
+
+body:json {
+  {
+    "patientId": 1,
+      "mainComplaint": 1,
+    "symptoms": 1,
+    "causes": 1,
+    "startDate": 1,
+    "fType": 1,
+    "fDescription": 1,
+    "pType": 1,
+    "pDescription": 1,
+      "differentialDiagnosis": 1,
+    "treatmentPlan": 1
+  
+  }
+}

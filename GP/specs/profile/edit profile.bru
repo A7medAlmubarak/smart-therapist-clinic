@@ -1,0 +1,33 @@
+meta {
+  name: edit profile
+  type: http
+  seq: 5
+}
+
+post {
+  url: 127.0.0.1:3000/specs/profile/edit
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3LCJpYXQiOjE3MjA2OTkwNTcsImV4cCI6MTc1MjIzNTA1N30.J8hMTIPdgPDK5WNmmFkVpk40HYEe6bWjb0iFPj4Z9pU
+}
+
+body:json {
+  {
+  "email":"falee.saglnasyef@gmail.com",
+    "password":"ADFSgdf42523"
+  
+  }
+}
+
+body:multipart-form {
+  phone: 0962006301
+  dateOfBirth: 1995-012-01
+  photo: @file(/home/faleh/icons/Tatice-Operating-Systems-Linux.256.png)
+  gender: 1
+  fullName: ali hassan
+  studyInfo: studied at tishreen uni
+  specInfo: specialized in none
+}

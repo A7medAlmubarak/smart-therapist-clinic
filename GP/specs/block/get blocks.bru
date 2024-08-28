@@ -1,0 +1,21 @@
+meta {
+  name: get blocks
+  type: http
+  seq: 3
+}
+
+get {
+  url: 127.0.0.1:3000/blocks
+  body: none
+  auth: none
+}
+
+headers {
+  authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzU3MjYzNywiZXhwIjoxNzU1MTA4NjM3fQ.VxVPuAAZmcD4fpFO0ks-inFzQM2mMxTWUrt1uXt1Lx4
+}
+
+body:json {
+  {
+    "userId":1
+  }
+}

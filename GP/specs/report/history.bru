@@ -1,0 +1,22 @@
+meta {
+  name: history
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:3000/reports/history
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMjExNTc1MSwiZXhwIjoxNzUzNjUxNzUxfQ.XEM5Ze18ft75JpUWdGgsN4jhlEDibTc0QVrecdwuxMI
+}
+
+body:json {
+  {
+    "appointmentId": 1,
+    "description": "afafd"
+  }
+}

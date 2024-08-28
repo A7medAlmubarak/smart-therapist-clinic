@@ -1,0 +1,22 @@
+meta {
+  name: unassign
+  type: http
+  seq: 1
+}
+
+delete {
+  url: http://localhost:3000/assignment/spec/3/user/1/unassign
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcyMjExNzAxNSwiZXhwIjoxNzUzNjUzMDE1fQ.ZOMESbtWC2swYJFBg3PoMy5nzR8I3QUGEh8G74rG88I
+}
+
+body:json {
+  {
+    "userId": 1,
+    "specId": 3
+  }
+}

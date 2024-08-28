@@ -1,0 +1,24 @@
+meta {
+  name: get all registration requests
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/registrationsRequests
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMzk4NTExMCwiZXhwIjoxNzU1NTIxMTEwfQ.2hDow6iHWfFJWOovigS6YuPe-UDOA9wLgB2KopG6w50
+}
+
+body:json {
+  {
+    "fullName": "fadfs afdsf",
+    "email": "safsd@fka.com",
+    "password": "af32jfA2f323",
+    "isSuper": true
+  }
+}

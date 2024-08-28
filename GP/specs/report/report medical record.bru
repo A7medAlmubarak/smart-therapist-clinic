@@ -1,0 +1,22 @@
+meta {
+  name: report medical record
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/reports/medicalRecord
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzU3MjYzNywiZXhwIjoxNzU1MTA4NjM3fQ.VxVPuAAZmcD4fpFO0ks-inFzQM2mMxTWUrt1uXt1Lx4
+}
+
+body:json {
+  {
+    "medicalRecordId": 2,
+    "description": "afafd"
+  }
+}

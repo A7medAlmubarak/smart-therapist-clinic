@@ -1,0 +1,30 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/specs/login
+  body: json
+  auth: none
+}
+
+body:json {
+        {
+  "email":"maysaa@gmail.com",
+    "password":"Hdr@2132",
+  "deviceToken":"deviceToken"
+  }
+}
+
+body:multipart-form {
+  email: fale7.alnayef@gmail.com
+  password: ADFSgdf42523
+  roleId: 2
+  phone: 0991086315
+  dateOfBirth: 2001-01-01
+  photo: @file(C:\Users\faleh\Pictures\Screenshots\Screenshot (15).png)
+  gender: 1
+  fullName: faleh
+}

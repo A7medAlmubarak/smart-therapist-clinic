@@ -1,0 +1,21 @@
+meta {
+  name: block
+  type: http
+  seq: 1
+}
+
+post {
+  url: 127.0.0.1:3000/blocks
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjcwNjUwMiwiZXhwIjoxNzU0MjQyNTAyfQ.tA_n2w3NNHDmj-tdewmg0a2ABbJcy-LdzVxLbwT8YoM
+}
+
+body:json {
+        {
+    "specId":2
+  }
+}

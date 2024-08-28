@@ -1,0 +1,33 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: 127.0.0.1:3000/specs/medicalRecords
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyMzk4NTI5NiwiZXhwIjoxNzU1NTIxMjk2fQ.FP_XwBaT_IQ_FapdrVHY0etLIJzN-n0CLafQV0dYdrI
+}
+
+body:json {
+  {
+     "patientId": 1,
+      "mainComplaint": "need to die",
+    "symptoms": "dying",
+    "causes": "loves to be dead",
+    "startDate": "2024-01-1",
+    "fType": "die",
+    "fDescription": "they die after living",
+    "pType": "tried to die",
+    "pDescription": "was looking for a way to ill him self",
+      "differentialDiagnosis": "now",
+    "treatmentPlan": "must kill himself"
+  
+  
+  }
+}

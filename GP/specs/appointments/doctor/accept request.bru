@@ -1,0 +1,25 @@
+meta {
+  name: accept request
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/appointment/request/3/set-date
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyNDQxOTUyNywiZXhwIjoxNzU1OTU1NTI3fQ.Iy_tHRkXhfdgU_WP6dnc_aV3drmCJipike2U-OGSfpQ
+}
+
+body:json {
+  {
+    "date": "32232"
+  }
+}
+
+body:form-urlencoded {
+  date: 2024-08-23 16:30:39
+}

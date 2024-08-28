@@ -1,0 +1,15 @@
+meta {
+  name: get patient history
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/appointment/request/get-transactions
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxNzY1NDczMiwiZXhwIjoxNzQ5MTkwNzMyfQ.joRG8QpijaduQwq_EOKhVAf75FIuF2TcykpnBRb32qo
+}

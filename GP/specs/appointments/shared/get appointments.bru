@@ -1,0 +1,15 @@
+meta {
+  name: get appointments
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/appointment/specialist
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyNDQxOTUyNywiZXhwIjoxNzU1OTU1NTI3fQ.Iy_tHRkXhfdgU_WP6dnc_aV3drmCJipike2U-OGSfpQ
+}

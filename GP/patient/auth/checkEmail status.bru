@@ -1,0 +1,15 @@
+meta {
+  name: checkEmail status
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/user/checkEmail
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  email: a7medalmubarak@gmail.com
+}

@@ -1,0 +1,22 @@
+meta {
+  name: show report
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{URL}}/admin-reports/1
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjExNTgxMCwiZXhwIjoxNzUzNjUxODEwfQ.yXoTLnMlYBdAyy9UiPnEhipfns3_HdHIB0G-K1yvdSY
+}
+
+body:json {
+  {
+    "appointmentId": 1,
+    "description": "afafd"
+  }
+}

@@ -1,0 +1,22 @@
+meta {
+  name: show report
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/reports/4
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjExNTY2NiwiZXhwIjoxNzUzNjUxNjY2fQ.0zE5mY-jq8ZQpW6epuMXdfZyo0Wv1gfDDw7fH9LfDYM
+}
+
+body:json {
+  {
+    "appointmentId": 1,
+    "description": "afafd"
+  }
+}

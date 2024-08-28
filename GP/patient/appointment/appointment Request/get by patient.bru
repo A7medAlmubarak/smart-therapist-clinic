@@ -1,0 +1,19 @@
+meta {
+  name: get by patient
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3000/appointment/request/patient
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjExNTY2NiwiZXhwIjoxNzUzNjUxNjY2fQ.0zE5mY-jq8ZQpW6epuMXdfZyo0Wv1gfDDw7fH9LfDYM
+}
+
+body:form-urlencoded {
+  description: dasdasdasda
+}

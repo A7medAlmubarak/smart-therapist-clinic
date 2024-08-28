@@ -1,0 +1,19 @@
+meta {
+  name: remove request
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:3000/appointment/request/2
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxOTY0NzQxNiwiZXhwIjoxNzUxMTgzNDE2fQ.UJrXmFaY4gvxCSKvcz1RsjcCcPVpxzC1FhjdxA4T5rU
+}
+
+body:form-urlencoded {
+  description: dasdasdasda
+}

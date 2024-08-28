@@ -1,0 +1,20 @@
+meta {
+  name: handle report
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/admin-reports/5/handle
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjExNTgxMCwiZXhwIjoxNzUzNjUxODEwfQ.yXoTLnMlYBdAyy9UiPnEhipfns3_HdHIB0G-K1yvdSY
+}
+
+body:json {
+  {
+    "action": true}
+}

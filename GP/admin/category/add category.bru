@@ -1,0 +1,23 @@
+meta {
+  name: add category
+  type: http
+  seq: 1
+}
+
+post {
+  url: 127.0.0.1:3000/categories
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMzk4NTExMCwiZXhwIjoxNzU1NTIxMTEwfQ.2hDow6iHWfFJWOovigS6YuPe-UDOA9wLgB2KopG6w50
+}
+
+body:json {
+  {
+    "name": "fsdf",
+    "eng": "fsdf"
+  
+  }
+}

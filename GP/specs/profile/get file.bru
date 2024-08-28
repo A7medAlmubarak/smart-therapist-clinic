@@ -1,0 +1,34 @@
+meta {
+  name: get file
+  type: http
+  seq: 11
+}
+
+get {
+  url: 127.0.0.1:3000/storage/transaction_approvments/20240616T213032651Z560199Screenshot (25).png
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTcxNzE2NzUwMSwiZXhwIjo1NDQ5NjQ3NTAxfQ.2jjpw6ZI2UBBh9vXQgnCHGRSQqj3vVR9JqcnWA9oWtE
+}
+
+body:json {
+  {
+  "email":"falee.saglnasyef@gmail.com",
+    "password":"ADFSgdf42523"
+  
+  }
+}
+
+body:multipart-form {
+  email: fale7.alnayef@gmail.com
+  password: ADFSgdf42523
+  roleId: 2
+  phone: 0991086315
+  dateOfBirth: 2001-01-01
+  photo: @file(C:\Users\faleh\Pictures\Screenshots\Screenshot (15).png)
+  gender: 1
+  fullName: faleh
+}

@@ -1,0 +1,23 @@
+meta {
+  name: send message notification
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/chat/message
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcyNDQwNDI4OCwiZXhwIjoxNzU1OTQwMjg4fQ.kuNp0Sso2UtqmmIx_KK25qKuGo60VLoiQ-jliVzl1Lk
+}
+
+body:json {
+  {
+    "userId": 1,
+    "senderName": "fsdfs",
+    "type": "message"    
+  }
+}

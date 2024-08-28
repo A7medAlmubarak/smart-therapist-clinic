@@ -1,0 +1,17 @@
+meta {
+  name: patient login
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/user/login
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  email: a7mealmubbk@mail.com
+  password: 12345678
+  deviceToken: deviceToken
+}

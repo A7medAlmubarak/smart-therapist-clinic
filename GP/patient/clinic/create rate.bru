@@ -1,0 +1,19 @@
+meta {
+  name: create rate
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/clinic/rate
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxNzY1NDczMiwiZXhwIjoxNzQ5MTkwNzMyfQ.joRG8QpijaduQwq_EOKhVAf75FIuF2TcykpnBRb32qo
+}
+
+body:form-urlencoded {
+  value: 5
+}
